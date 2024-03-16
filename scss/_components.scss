@@ -1,2 +1,22 @@
 @use './styles' as s;
 
+.btn{
+    color: s.$primary;
+    background-color: s.$neutral1;
+    padding: 24px 35px 24px 32px;
+    display: flex;
+    align-items: center;
+
+    &::before{
+        content: url('/assets/Group.png');
+        height: 100%;
+    }
+}
+
+.header{
+    @include s.heading-l;
+}
+
+.body{
+    @include s.body-s;
+}

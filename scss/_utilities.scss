@@ -1,0 +1,11 @@
+@use './styles' as s;
+
+// Margin
+.container{
+    margin-inline: s.$space12;
+    margin-block: 120px;
+}
+
+.footer{
+    margin-inline: s.$space8;
+}

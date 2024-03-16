@@ -1,1 +1,94 @@
+// Colors
+$primary: #D5966C;
+$neutral1: #151515;
+$neutral2: #444444;
+$white: #FFFFFF;
 
+// Typography
+@mixin header-font{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+@mixin body-font{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+@mixin heading-xl{
+    font-size: 96px;
+    line-height: 88px;
+    text-transform: uppercase;
+    @include header-font;
+}
+
+@mixin heading-l{
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    @include header-font;
+}
+
+@mixin heading-m{
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    @include header-font;
+}
+
+@mixin heading-s{
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    @include header-font;
+}
+
+@mixin body-m{
+    font-size: 22px;
+    line-height: 32px;
+    @include body-font;
+}
+
+@mixin body-s{
+    font-size: 18px;
+    line-height: 28px;
+    @include body-font;
+}
+
+// Media Queries
+@mixin for-phone-only {
+@media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+@media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+@media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+@media (min-width: 1200px) { @content; }
+}
+
+@mixin for-big-desktop-up {
+@media (min-width: 1800px) { @content; }
+}
+
+// Spacing
+$space1: 85px;
+$space2: 80px;
+$space3: 68px;
+$space4: 56px;
+$space5: 48px;
+$space6: 40px;
+$space7: 38px;
+$space8: 32px;
+$space9: 25px;
+$space10: 21px;
+$space11: 20px;
+$space12: 16px;
+$space13: 11px;
